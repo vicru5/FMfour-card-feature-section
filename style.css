@@ -99,14 +99,55 @@ main{
 	justify-content: flex-end;
 	flex-basis: 33%;
 	justify-content: center;
-	border: 1px solid black;
 }
 
 .cards .card{
 	margin: 10px 0px;
+	padding: 20px;
 	width: 239px;
 	height: 172px;
-	border: 1px solid #ccc;
 	background-color: white;
 	border-radius: 5px;
+	box-shadow: 0px 4px 12px #CDCDCD;
+}
+
+.card h3{
+	color: var(--Very-Dark-Blue);
+	font-size: 15px;
+	font-family: 'Poppins Bold';
+	text-align-last: left;
+}
+
+.card p{
+	font-family: 'Poppins Regular';
+	text-align: left;
+	color: var(--Grayish-Blue);
+	font-size: 10px;
+	margin-top: 10px;
+}
+
+.card img{
+	width: 46px;
+	height: 46px;
+	display: block;
+	float: right;
+	margin-top: 20px;
+}
+
+.cardsContainer div.cards:first-child > .card{
+	border-top: 3px solid var(--Cyan);
+}
+
+#center div.card:nth-child(1){
+	border-top: 3px solid var(--Red);
+}
+
+
+#center div.card:nth-child(2){
+	border-top: 3px solid var(--Orange);
+}
+
+
+.cardsContainer div.cards:last-child div.card{
+	border-top: 3px solid var(--Blue);
 }
