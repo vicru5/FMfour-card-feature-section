@@ -80,8 +80,8 @@ main{
 	font-family: 'Poppins Regular';
 	color: var(--Grayish-Blue);
 	display: block;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	width: 70%;
+	margin: 10px auto;
 }
 
 .cardsContainer{
@@ -150,4 +150,54 @@ main{
 
 .cardsContainer div.cards:last-child div.card{
 	border-top: 3px solid var(--Blue);
+}
+
+@media (max-width: 375px){
+	main{
+		height: auto;
+	}
+
+	.container{
+		margin-top: 50px;
+		width: 90%;
+		height: auto;
+		margin-bottom: 50px;
+	}
+
+	.text h1{
+		width: 90%;
+		margin: 0px auto;
+		font-size: 23px;
+	}
+
+	.text h1 span{
+		width: 96%;
+		margin: 0px auto;
+		font-size: 24px;
+	}
+
+	.text p{
+		width: 90%;
+		margin: 10px auto;
+	}
+
+	.cardsContainer{
+		flex-direction: column;
+		width: 100%;
+		margin: 0px auto;
+		margin-top: 20px;
+	}
+
+	.cards div.card{
+		width: 90%;
+		height: 180px;
+	}
+
+	.cards div.card h3{
+		font-size: 18px;
+	}
+
+	.cards div.card p{
+		font-size: 12px;
+	}
 }
